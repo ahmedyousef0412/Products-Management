@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Management App</title>
+    <link href="Css/style.css" rel="stylesheet" />
+    <link href="Css/all.min.css" rel="stylesheet" />
+    <link href="Css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+     <section class="welcome">
+         <div>
+            <h2>Welcome in this Products App </h2>
+         </div>
+     </section>
+     
+  <section class="section">
+    <div class="container-fluid">
+        <div class="w-40 m-auto row">
+            <div class="col-lg-4">
+                <div class="form-group">
+                    <label for="ProductName">Product Name</label>
+                    <input type="text" id="ProductName" class="form-control"  autocomplete="on" />
+                </div>
+    
+                <div class="form-group">
+                    <label for="ProductPrice">Product Price</label>
+                    <input type="number" id="ProductPrice" class="form-control" />
+                </div>
+    
+                <div class="form-group">
+                    <label for="ProductCategory">Product Category</label>
+                    <input type="text" id="ProductCategory" class="form-control" />
+                </div>
+    
+                <div class="form-group">
+                    <label for="ProductDescription">Product Description</label>
+                    <textarea type="text" id="ProductDescription" class="form-control"></textarea>
+                </div>
+               <div class="form-group">
+                <button  onclick="addProduct();"  class="btn btn-info form-control " id="mainButton">Add Product</button>
+               </div>
+                
+            </div>
+        </div>
+    </div>
+  </section>
+    
+
+  <section class="search">
+      <div class="w-50 m-auto py-3">
+         <input  onkeyup="searchProduct(this.value);" placeholder="Search..........." type="text" class="form-control">
+      </div>
+  </section>
+
+
+  <section>
+      <table class="table mt-4">
+
+        <thead>
+            <th>Index</th>
+            <th>ProductName</th>
+            <th>ProductPrice</th>
+            <th>ProductCategory</th>
+            <th>ProductDescription</th>
+            <th>Update</th>
+            <th>Delete</th>
+
+
+        </thead>
+
+        <tbody id="tbBody">
+          
+        </tbody>
+
+      </table>
+  </section>
+    
+
+    <script src="Js/index.js"></script>
+</body>
+
+</html>

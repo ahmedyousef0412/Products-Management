@@ -1,0 +1,47 @@
+
+.section
+{
+    background-color: gray;
+    margin: auto;
+}
+.section  label
+{
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section input
+{
+    font-size: larger;
+    font-weight: bolder;
+}
+.section textarea
+{
+    font-size: larger;
+    font-weight: bolder;
+}
+.section button
+{
+    font-size: larger;
+    font-weight: bolder;
+}
+.welcome
+{
+    text-align: center;
+    margin-top: auto;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    background-color: wheat;
+}
+
+.search input
+{
+    background-color: wheat;
+    font-weight: bolder;
+}
+table thead th
+{
+    color:darkblue;
+  
+}
